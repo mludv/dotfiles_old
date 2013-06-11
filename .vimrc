@@ -11,7 +11,6 @@ Bundle 'gmarik/vundle'
 Bundle 'pangloss/vim-javascript'
 Bundle 'tpope/vim-surround'
 Bundle 'msanders/snipmate.vim'
-Bundle 'marijnh/tern_for_vim'
 
 filetype plugin indent on
 
