@@ -6,8 +6,6 @@
 [user]
         name = mludv
         email = maxiludvigsson@gmail.com
-[credential]
-        helper = osxkeychain
 [alias]
         co = checkout
         promote = !$ZSH/bin/git-promote
