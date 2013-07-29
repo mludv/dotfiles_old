@@ -1,0 +1,23 @@
+[ui]
+username = Maximilian Ludvigsson <maxiludvigsson@gmail.com>
+
+[alias]
+lga = glog --style=/home/max/.config/hg/map-cmdline.lg
+lgs = log --style=/home/max/.config/hg/map-cmdline.slog
+lgn = log --style=/home/max/.config/hg/map-cmdline.nlog
+# Nuke everything in the working copy
+nuke = !hg up -C . && hg clean
+
+[extensions]
+color =
+graphlog =
+pager =
+purge =
+mq = 
+
+[pager]
+pager = LESS='FSRX' less
+attend = cat, diff, glog, log, incoming, outgoing, lg, show, lga, lgs, lgn, grep
+
+[hostfingerprints]
+bitbucket.org = 24:9C:45:8B:9C:AA:BA:55:4E:01:6D:58:FF:E4:28:7D:2A:14:AE:3B
