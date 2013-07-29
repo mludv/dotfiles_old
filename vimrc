@@ -27,7 +27,7 @@ syntax on
 """"""""""""""""""""""""""""""""""""""""""""
 
 " Colors
-set background=dark
+set background=light
 colorscheme solarized
 
 " No more ex mode
