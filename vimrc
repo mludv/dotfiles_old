@@ -79,6 +79,15 @@ set nrformats=
 " Maps %% to current file directory
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+" Use VCS file list with CtrlP
+let g:ctrlp_user_command = {
+	\ 'types': {
+		\ 1: ['.git', 'cd %s && git ls-files'],
+		\ 2: ['.hg', 'hg --cwd %s locate -I .'],
+		\ },
+	\ 'fallback': 'find %s -type f'
+	\ }
+
 " Backup to ~/.tmp 
 set backup 
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp 

@@ -45,7 +45,7 @@ plugins=(mludv)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/home/max/.local/bin
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:/usr/bin:/usr/bin/core_perl:/home/max/.local/bin
 
 # Add ruby gem-path
 export PATH=$(ruby -rubygems -e "puts Gem.user_dir")/bin:$PATH
@@ -54,9 +54,10 @@ export PATH=$(ruby -rubygems -e "puts Gem.user_dir")/bin:$PATH
 export EDITOR=vim
 
 # Enable rbenv
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 # Unset autocorrection
 unsetopt correct_all
 
-alias mdisp="xrandr --output LVDS-1 --auto && xrandr --output HDMI-1 --auto --right-of LVDS-1"
+# Set up NVM
+if [[ -s $HOME/.nvm ]] ; then source $HOME/.nvm/nvm.sh ; fi
